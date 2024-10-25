@@ -7,161 +7,196 @@
     <title>WEB TOOLS BY ZCDSPH FOR FREE</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.ibb.co/kDMYNh6/CUTIEE.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            text-transform: uppercase; 
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #5a4b3a;
-            letter-spacing: 1px;
-            font-size: 2.5em;
-            text-transform: uppercase;
-        }
-        h2 {
-            text-align: center;
-            color: #4b3d28;
-            margin: 20px 0;
-            font-size: 1.8em;
-        }
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-            color: #7d7d7d;
-        }
-        .web-list-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            justify-items: center;
-        }
-        .web-box {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            padding: 25px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        #particles-js {
+            position: fixed;
             width: 100%;
-            max-width: 250px;
-            position: relative;
-            opacity: 0;
-            animation: fadeIn 0.5s forwards;
-        }
-        .web-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        .web-title {
-            font-size: 1.5em;
-            color: #4b3d28;
-            margin: 15px 0;
-        }
-        .web-desc {
-            color: #7d7d7d;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #6a4c93;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1em;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .btn:hover {
-            background-color: #4e3a7d;
-            transform: scale(1.05);
-        }
-        img {
-            display: block;
-            margin: 0 auto 20px auto;
-            max-width: 200px;
-            border-radius: 12px;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; 
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-200 font-poppins p-5">
 
-    <img src="https://i.ibb.co/kDMYNh6/CUTIEE.jpg" alt="ZCDS PH Logo">
-    <h1>Web Tools - ZCDS PH</h1>
-    <h2>Welcome to ZCDS PH</h2>
-    <p class="intro">Explore our collection of free web tools designed to enhance your online experience. From downloading songs to generating images, we have something for everyone!</p>
+    <div id="particles-js"></div>
 
-        <div class="web-list-container">
-          <div class="web-box" style="animation-delay: 0s;">
-            <h3 class="web-title">SONG DOWNLOADER</h3>
-            <p class="web-desc">DOWNLOAD SONGS FOR FREE.</p>
-            <a href="https://musicdownloaderfree.onrender.com/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.1s;">
-            <h3 class="web-title">IP LOOK UP TOOL</h3>
-            <p class="web-desc">IP LOCATOR FOR FREE.</p>
-            <a href="https://iplookuptoolfree.onrender.com" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.6s;">
-            <h3 class="web-title">TIKTOK VIDEO DOWNLOADER HD</h3>
-            <p class="web-desc">HD DOWNLOADER FOR TIKTOK VIDEOS.</p>
-            <a href="https://tiktokdownloader-6620.onrender.com" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.7s;">
-            <h3 class="web-title">AUTO SHARE [APPSTATE]</h3>
-            <p class="web-desc">FACEBOOK SHARING TOOL.</p>
-            <a href="https://automatedspamshare.onrender.com" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.2s;">
-            <h3 class="web-title">TEMPORARY EMAIL</h3>
-            <p class="web-desc">FREE DISPOSABLE EMAILS.</p>
-            <a href="https://temporaryemails.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.3s;">
-            <h3 class="web-title">IMAGE GENERATOR</h3>
-            <p class="web-desc">GENERATE IMAGES EASILY.</p>
-            <a href="https://imagegenerator.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.4s;">
-            <h3 class="web-title">IMAGE CONVERTER</h3>
-            <p class="web-desc">CONVERT IMAGES WITH EASE.</p>
-            <a href="https://imagetolink.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.5s;">
-            <h3 class="web-title">INSTAGRAM VIDEO DOWNLOADER</h3>
-            <p class="web-desc">DOWNLOAD INSTAGRAM VIDEOS.</p>
-            <a href="https://instadl.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.8s;">
-            <h3 class="web-title">FACEBOOK REELS DOWNLOADER</h3>
-            <p class="web-desc">HD DOWNLOADER FOR FACEBOOK VIDEOS.</p>
-            <a href="https://fbreelsdownloader.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 0.9s;">
-            <h3 class="web-title">COUNTRY INFO</h3>
-            <p class="web-desc">COUNTRY INFORMATION SEARCH TOOL.</p>
-            <a href="https://countryinfosearch.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
-          <div class="web-box" style="animation-delay: 1s;">
-            <h3 class="web-title">BIBLE VERSE GENERATOR</h3>
-            <p class="web-desc">GENERATE BIBLE VERSES.</p>
-            <a href="https://bibleversegenerator.glitch.me/" target="_blank" class="btn">VISIT</a>
-          </div>
+    <img src="https://i.ibb.co/kDMYNh6/CUTIEE.jpg" alt="ZCDS PH Logo" class="mx-auto mb-5 max-w-xs rounded-lg">
+    <h1 class="text-center text-4xl mb-8 text-gray-100">Web Tools - ZCDS PH</h1>
+    <h2 class="text-center text-3xl text-gray-300 mb-5">Welcome to ZCDS PH</h2>
+    <p class="text-center text-lg mb-10 text-gray-400">Explore our collection of free web tools designed to enhance your online experience. From downloading songs to generating images, we have something for everyone!</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">SONG DOWNLOADER</h3>
+            <p class="text-gray-400 mb-4">DOWNLOAD SONGS FOR FREE.</p>
+            <a href="https://musicdownloaderfree.onrender.com/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">IP LOOK UP TOOL</h3>
+            <p class="text-gray-400 mb-4">IP LOCATOR FOR FREE.</p>
+            <a href="https://iplookuptoolfree.onrender.com" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">TIKTOK VIDEO DOWNLOADER HD</h3>
+            <p class="text-gray-400 mb-4">HD DOWNLOADER FOR TIKTOK VIDEOS.</p>
+            <a href="https://tiktokdownloader-6620.onrender.com" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">AUTO SHARE [APPSTATE]</h3>
+            <p class="text-gray-400 mb-4">FACEBOOK SHARING TOOL.</p>
+            <a href="https://automatedspamshare.onrender.com" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">TEMPORARY EMAIL</h3>
+            <p class="text-gray-400 mb-4">FREE DISPOSABLE EMAILS.</p>
+            <a href="https://temporaryemails.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">IMAGE GENERATOR</h3>
+            <p class="text-gray-400 mb-4">GENERATE IMAGES EASILY.</p>
+            <a href="https://imagegenerator.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">IMAGE CONVERTER</h3>
+            <p class="text-gray-400 mb-4">CONVERT IMAGES WITH EASE.</p>
+            <a href="https://imagetolink.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">INSTAGRAM VIDEO DOWNLOADER</h3>
+            <p class="text-gray-400 mb-4">DOWNLOAD INSTAGRAM VIDEOS.</p>
+            <a href="https://instadl.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">FACEBOOK REELS DOWNLOADER</h3>
+            <p class="text-gray-400 mb-4">HD DOWNLOADER FOR FACEBOOK VIDEOS.</p>
+            <a href="https://fbreelsdownloader.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">COUNTRY INFO</h3>
+            <p class="text-gray-400 mb-4">COUNTRY INFORMATION SEARCH TOOL.</p>
+            <a href="https://countryinfosearch.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center transition-transform duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl text-gray-200 mb-3">BIBLE VERSE GENERATOR</h3>
+            <p class="text-gray-400 mb-4">GENERATE BIBLE VERSES.</p>
+            <a href="https://bibleversegenerator.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+        </div>
+    </div>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 </html>
