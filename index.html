@@ -18,9 +18,14 @@
             left: 0;
             z-index: -1; 
         }
+        .content {
+            position: relative;
+            z-index: 10;
+        }
         .card {
             border: 2px solid rgba(102, 216, 236, 0.6);
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
         }
         .card:hover {
             transform: scale(1.05);
@@ -32,6 +37,9 @@
             height: 10px;
             border-radius: 50%;
             background-color: green;
+            position: absolute; /* Positioning the status indicator */
+            top: 10px; /* Adjust top distance */
+            left: 10px; /* Adjust left distance */
         }
     </style>
     <script>
@@ -54,136 +62,114 @@
 
     <div id="particles-js"></div>
 
-    <img src="https://i.ibb.co/gTHYqvM/zcds.jpg" alt="ZCDS PH Logo" class="mx-auto mb-5 max-w-xs rounded-lg">
-    <h2 class="text-center text-3xl text-gray-300 mb-5">WELCOME TO ZCDS PH WEB TOOLS</h2>
-    <p class="text-center text-lg mb-10 text-gray-400">Explore our collection of free web tools designed to enhance your online experience. From downloading songs to generating images, we have something for everyone!</p>
+    <div class="content">
+        <img src="https://i.ibb.co/gTHYqvM/zcds.jpg" alt="ZCDS PH Logo" class="mx-auto mb-5 max-w-xs rounded-lg">
+        <h2 class="text-center text-3xl text-gray-300 mb-5">WELCOME TO ZCDS PH WEB TOOLS</h2>
+        <p class="text-center text-lg mb-10 text-gray-400">Explore our collection of free web tools designed to enhance your online experience. From downloading songs to generating images, we have something for everyone!</p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/0hRp839/musicdl.png" alt="Song Downloader" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">SONG DOWNLOADER</h3>
-            <p class="text-gray-400 mb-4">DOWNLOAD SONGS FOR FREE.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/0hRp839/musicdl.png" alt="Song Downloader" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">SONG DOWNLOADER</h3>
+                <p class="text-gray-400 mb-4">DOWNLOAD SONGS FOR FREE.</p>
+                <a href="https://musicdl.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
             </div>
-            <a href="https://musicdl.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/7vvhWbk/iploc.png" alt="IP Lookup Tool" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">IP LOOK UP TOOL</h3>
+                <p class="text-gray-400 mb-4">IP LOCATOR FOR FREE.</p>
+                <a href="https://iplocator.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/9r0VmWD/tikdl.png" alt="TikTok Video Downloader" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">TIKTOK VIDEO DOWNLOADER HD</h3>
+                <p class="text-gray-400 mb-4">HD DOWNLOADER FOR TIKTOK VIDEOS.</p>
+                <a href="https://tiktokdownloader.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/vkjmxXH/fbshare.png" alt="Auto Share Tool" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">AUTO SHARE [APPSTATE]</h3>
+                <p class="text-gray-400 mb-4">FACEBOOK SHARING TOOL.</p>
+                <a href="https://autoshare.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/kKvFYVr/autoreact.png" alt="Auto React Tool" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">AUTO REACT TOOL</h3>
+                <p class="text-gray-400 mb-4">FREE FB REACTIONS</p>
+                <a href="https://autoreact.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/CK4Cp11/yawa.png" alt="REELS DL" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">FB REEL DL</h3>
+                <p class="text-gray-400 mb-4">FACEBOOK REELS DOWNLOADER FOR FREE</p>
+                <a href="https://fbdl.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/NxRZHR7/bible.png" alt="BIBLE" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">BIBLE VERSE GEN</h3>
+                <p class="text-gray-400 mb-4">FREE BIBLE VERSE GENERATOR RANDOM FROM OLD AND NEW TESTAMENT</p>
+                <a href="https://biblegenerator.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/pWgBWrc/toshi.png" alt="TOSH CHAT" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">TOSHIA CHATBOT</h3>
+                <p class="text-gray-400 mb-4">AI CHATBOT GPT4</p>
+                <a href="https://toshchatbot.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/HdxRm4D/LC.png" alt="LYRICS" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">LYRICS SEARCHER</h3>
+                <p class="text-gray-400 mb-4">SEARCH LYRICS BY PROVIDING TITLE</p>
+                <a href="https://searchlyricsfree.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/qC2q75X/temp.png" alt="Temporary Email" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">TEMPORARY EMAIL</h3>
+                <p class="text-gray-400 mb-4">FREE DISPOSABLE EMAILS.</p>
+                <a href="https://temporaryemails.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/9pfznjg/imagegen.png" alt="Image Generator" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">IMAGE GENERATOR</h3>
+                <p class="text-gray-400 mb-4">GENERATE IMAGES EASILY.</p>
+                <a href="https://imagegenerator.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
+                <span class="status-indicator"></span>
+                <img src="https://i.ibb.co/h1bwHbg/imaagetolink.png" alt="Image Converter" class="mb-3 rounded-lg max-w-full">
+                <h3 class="text-xl text-gray-200 mb-3">IMAGE CONVERTER</h3>
+                <p class="text-gray-400 mb-4">CONVERT IMAGES WITH EASE.</p>
+                <a href="https://imagetolink.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
+            </div>
         </div>
 
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/7vvhWbk/iploc.png" alt="IP Lookup Tool" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">IP LOOK UP TOOL</h3>
-            <p class="text-gray-400 mb-4">IP LOCATOR FOR FREE.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://iplocator.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/9r0VmWD/tikdl.png" alt="TikTok Video Downloader" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">TIKTOK VIDEO DOWNLOADER HD</h3>
-            <p class="text-gray-400 mb-4">HD DOWNLOADER FOR TIKTOK VIDEOS.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://tiktokdownloader.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/vkjmxXH/fbshare.png" alt="Auto Share Tool" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">AUTO SHARE [APPSTATE]</h3>
-            <p class="text-gray-400 mb-4">FACEBOOK SHARING TOOL.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://autoshare.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/kKvFYVr/autoreact.png" alt="Auto React Tool" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">AUTO REACT TOOL</h3>
-            <p class="text-gray-400 mb-4">FREE FB REACTIONS</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://autoreact.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/CK4Cp11/yawa.png" alt="REELS DL" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">FB REEL DL</h3>
-            <p class="text-gray-400 mb-4">FACEBOOK REELS DOWNLOADER FOR FREE</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://fbdl.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/NxRZHR7/bible.png" alt="BIBLE" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">BIBLE VERSE GEN</h3>
-            <p class="text-gray-400 mb-4">FREE BIBLE VERSE GENERATOR RANDOM FROM OLD AND NEW TESTAMENT</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://biblegenerator.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/pWgBWrc/toshi.png" alt="TOSH CHAT" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">TOSHIA CHATBOT</h3>
-            <p class="text-gray-400 mb-4">AI CHATBOT GPT4</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://toshchatbot.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/HdxRm4D/LC.png" alt="LYRICS" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">LYRICS SEARCHER</h3>
-            <p class="text-gray-400 mb-4">SEARCH LYRICS BY PROVIDING TITLE</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://searchlyricsfree.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/qC2q75X/temp.png" alt="Temporary Email" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">TEMPORARY EMAIL</h3>
-            <p class="text-gray-400 mb-4">FREE DISPOSABLE EMAILS.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://temporaryemails.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/9pfznjg/imagegen.png" alt="Image Generator" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">IMAGE GENERATOR</h3>
-            <p class="text-gray-400 mb-4">GENERATE IMAGES EASILY.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://imagegenerator.glitch.me/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow-lg p-5 text-center card">
-            <img src="https://i.ibb.co/h1bwHbg/imaagetolink.png" alt="Image Converter" class="mb-3 rounded-lg max-w-full">
-            <h3 class="text-xl text-gray-200 mb-3">IMAGE CONVERTER</h3>
-            <p class="text-gray-400 mb-4">CONVERT IMAGES WITH EASE.</p>
-            <div class="mb-2">
-                <span class="status-indicator"></span> <span class="text-green-400">Online</span>
-            </div>
-            <a href="https://imagetolink.marjhun.fun/" target="_blank" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">VISIT</a>
-        </div>
+        <footer class="bg-gray-800 text-gray-300 text-center p-5 mt-10">
+            <p class="mb-2">© 2024 ZCDS PH. All rights reserved.</p>
+            <a href="https://www.facebook.com/marjhuncutieee" target="_blank" class="text-purple-500 hover:underline">DEVELOPER FACEBOOK [ TAP THIS ]</a>
+        </footer>
     </div>
-
-    <footer class="bg-gray-800 text-gray-300 text-center p-5 mt-10">
-        <p class="mb-2">© 2024 ZCDS PH. All rights reserved.</p>
-        <a href="https://www.facebook.com/marjhuncutieee" target="_blank" class="text-purple-500 hover:underline">DEVELOPER FACEBOOK [ TAP THIS ]</a>
-    </footer>
 
     <script>
         particlesJS("particles-js", {
