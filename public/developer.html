@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Portfolio | Your Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00b0cc;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #bbb;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00e5ff;
+        }
+
+        #hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://i.ibb.co/88wB5CH/photo-1500673922987-e212871fec22.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #hero h1 {
+            font-size: 4.5rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        .invisible {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #about {
+            padding: 80px 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00e5ff;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #about .owner-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        #projects {
+            padding: 80px 20px;
+            background-color: #222;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00e5ff;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 8px;
+            max-height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            margin-top: 15px;
+            color: #00e5ff;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #bbb;
+        }
+
+        footer a {
+            color: #00e5ff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-card img {
+                max-height: 180px;
+            }
+
+            nav ul li a {
+                font-size: 1.3rem;
+            }
+
+            #about .owner-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                padding: 15px;
+            }
+
+            nav ul li a {
+                font-size: 1.1rem;
+            }
+
+            #about .owner-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <h1 class="invisible">Marjhun Baylon</h1>
+            <p class="invisible">Web Developer | Designer | Programmer</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="https://i.ibb.co/M8qm1md/gwapo.jpg" alt="Owner's Photo" class="owner-image invisible">
+            <h2 class="invisible">About Me</h2>
+            <p class="invisible">
+                I'm a passionate web developer with expertise in front-end and back-end technologies.
+                I love creating beautiful, user-friendly websites and applications that provide seamless experiences.
+                When I'm not coding, you can find me exploring new technologies, attending conferences, or working on personal projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="invisible">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card invisible">
+                    <img src="https://i.ibb.co/ygWHC9G/iyot.png" alt="Project 1">
+                    <h3>ZCDS PH Web Tool</h3>
+                    <p>This project is a web tool built using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-card invisible">
+                    <img src="https://i.ibb.co/6NF97T5/apis.png" alt="Project 2">
+                    <h3>ZCDS PH APIs</h3>
+                    <p>A REST API of AI models.</p>
+                </div>
+                <div class="project-card invisible">
+                    <img src="https://i.ibb.co/LCDcJXD/monitor.png" alt="Project 3">
+                    <h3>ZCDS PH Monitoring Tool</h3>
+                    <p>Monitoring tool built with modern JavaScript frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Marjhun Baylon. All rights reserved.</p>
+        <p>Connect with me on <a href="https://www.facebook.com/marjhuncutieee">Facebook</a></p>
+    </footer>
+
+    <script>
+        const elements = document.querySelectorAll('.invisible');
+
+        const observerOptions = {
+            root: null,
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+
+</html>
