@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marjhun Baylon">
+    <title>About | Marjhun Baylon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #00b0cc;
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00e5ff;
+            font-weight: 600;
+        }
+
+        #about, #purpose, #future-projects {
+            padding: 60px 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        #about h2, #purpose h2, #future-projects h2 {
+            font-size: 2.8rem;
+            color: #00e5ff;
+        }
+
+        #about p, #purpose ul, #future-projects ul {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards 0.3s;
+        }
+
+        #purpose ul, #future-projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #purpose li, #future-projects li {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #bbb;
+        }
+
+        footer a {
+            color: #00e5ff;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            color: #00b0cc;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #about h2 {
+                font-size: 2.2rem;
+            }
+
+            #about p, #purpose ul, #future-projects ul {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #purpose ul,
+            #future-projects ul {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="about">
+        <div class="container">
+            <h2>About This Website</h2>
+            <p>
+                Welcome to my personal portfolio! This website serves as a showcase of my web development and design projects. Here, you’ll find examples of my work, insights into my journey, and a deeper look into my passion for creating beautiful and functional websites.
+            </p>
+        </div>
+    </section>
+
+    <section id="purpose">
+        <div class="container">
+            <h2>Purpose of This Website</h2>
+            <p>My goal for this platform is to:</p>
+            <ul>
+                <li>Showcase my web development and design projects.</li>
+                <li>Highlight the technologies and tools I am proficient in.</li>
+                <li>Share valuable insights and experiences from my journey in web development.</li>
+                <li>Establish my online presence as a skilled web developer and designer.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="future-projects">
+        <div class="container">
+            <h2>Future Projects</h2>
+            <p>Here are some of the exciting projects I’m planning to work on:</p>
+            <ul>
+                <li>Create a full-stack e-commerce platform with React and Node.js.</li>
+                <li>Develop a personal blog with advanced SEO and responsive design features.</li>
+                <li>Build a real-time chat application using WebSockets and Express.js.</li>
+                <li>Explore AI integrations within web applications.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Marjhun Baylon. All rights reserved.</p>
+        <p>Connect with me on <a href="https://www.facebook.com/marjhuncutieee" target="_blank">Facebook</a></p>
+    </footer>
+
+</body>
+
+</html>
